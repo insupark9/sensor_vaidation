@@ -11,8 +11,8 @@ def read_raw_data(filename, height, width):
     img = np.frombuffer(raw, dtype=np.int16)
     img = np.reshape(img, (height,width))
     #shape(nimg)
-    print img.size
-    print img.shape
+    #print img.size
+    #print img.shape
     img = img - blc
 
     return img
